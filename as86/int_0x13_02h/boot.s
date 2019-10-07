@@ -12,8 +12,8 @@ go:
 	mov ax, #boot_sp
 	mov sp, ax
 	mov [b13_driver_num], #0x0
-	mov [i1302_rd_secs], #1
-	movb [i1302_start_sec], #3
+	mov [i1302_rd_secs], #3
+	movb [i1302_start_sec], #1
 	movb [i1302_track_num], #0
 	movb [i1302_head_num], #0
 	mov [i1302_rd_buff_seg], #0x9000
